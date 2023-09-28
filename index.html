@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       *{
+        margin: 0;
+        padding: 0;
+        font-family: "poppins", sans-serif;
+       }
+     
+       ul {
+        display:flex;
+        justify-content:space-around;
+       }
+       
+       nav ul li {
+        padding-left:180px;
+        list-style-type: none;
+        font-size:20px;
+       }
+       nav ul li a:hover{
+        color:violet;
+        font-size:22px;
+       }
+       nav ul li a{
+        text-decoration: none;
+        color:white;
+       }
+       .img{
+        height:100vh;
+        width:100%;
+        background-image: url("C:/Users/REKHA GIRI/Desktop/CODING/music/image3.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+       }
+       h3{
+        font-size: 40px;
+        color:violet;
+       }
+       h1{
+        padding-top: 150px;
+        padding-left: 500px;
+        color:white;
+        font-size:60px;
+       }
+       .text{
+        color:rgba(0, 0, 0, 0.032);
+        text-align:center;
+        padding-left:40px;
+        padding-right: 40px;
+        color:white;
+       }
+       .box{
+        padding-left: 40px;
+        text-align: left;
+    background-color:whitesmoke;
+        display:flex;
+        justify-content: space-evenly;
+       }
+       .boxes{
+        width:28%;
+        background-color:white;
+       }
+       .boxes:hover{
+        box-shadow:25px 25px 20px #61615f;
+}
+       
+      .label{
+        font-size:50px;
+        padding-left:470px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    
+        font-weight: bold;
+        color:purple;
+       }
+       .date{
+        background-color:purple;
+        color:white;
+        width:150px;
+        padding-left:50px;
+        margin-left: 60px; 
+        margin-top: 0px; 
+        /* margin:30px 10px; */
+        border-radius: 8px;
+        height:30px;
+        padding-top:14px;
+       }
+       .txt div{
+        /* margin:20px 0px; */
+        padding-left:40px;
+        padding-top:10px;
+        padding-bottom: 10px;
+        font-weight:bold;
+        font-size: 20px;
+       }
+       .david{
+        padding-left:10px;
+        padding-right: 10px;
+       }
+       .video{
+        padding-top:50px;
+        margin-top:40px;
+        display:flex;
+        justify-content: space-around;
+        background-color:whitesmoke;
+       }
+       .video span{
+        font-size:35px;
+        font-weight: bold;
+        padding-left:20px;
+        line-height: 40px;
+       }
+       .content{
+        padding-left:20px;
+       }
+       .content p{
+        padding-top:40px;
+        padding-right:160px;
+        padding-left: 16px;
+       }
+       button{
+        font-size:large;
+        padding-top:10px;
+        padding-bottom: 10px;
+        padding-left: 30px;
+        padding-right: 30px;
+        margin-top: 40px;
+        margin-left: 80px;
+        background-color: purple;
+        color:white;
+        border:0px;
+        border-radius: 8px;
+        margin-bottom: 20px;
+       }
+    button:hover{
+        padding-top:15px;
+        padding-bottom: 15px;
+        padding-left: 35px;
+        padding-right: 35px;
+        background-color:rgb(219, 92, 219);
+        color:black;
+        font-weight: bold;
+       }
+       .feed{
+        font-size:60px;
+        font-weight: bold;
+        padding-left: 400px;
+        margin-top:30px;
+        padding-bottom: 20px;
+        color:purple;
+        
+    }
+      .utube{
+        background-color:whitesmoke;
+        display:grid;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto   auto;
+        grid-row-gap: 60px;
+        padding-top:40px;
+        padding-bottom: 20px;
+
+      }
+      .photos{
+        padding-left:20px;
+        padding-right:20px;
+        margin-left:20px;
+        padding-left:20px;
+      }
+      .photos:hover{
+        box-shadow:25px 25px 20px   #61615f;
+
+      }
+      .utxt{
+        
+        padding-left: 20px;
+        font-weight: bold;
+        font-size:20px;
+        background-color: aliceblue;
+        padding-top: 0px;
+    }
+    .download{
+        display:flex;
+        justify-content: space-between;
+        margin-top: 50px;
+        /* background-color: whitesmoke; */
+    }
+    .download span{
+        font-size: 30px;
+        font-weight: bold;
+        padding-left:200px;
+        color:purple;
+    }
+    .downtxt p{
+        padding-top:50px;
+        text-align: justify;
+        font-size:17px;
+    }
+    .footer{
+        background-color:purple;
+        display:flex;
+        justify-content: space-around;
+    padding-bottom: 50px;
+    }
+    .ftxt{
+        padding-top: 30px;
+    }
+    table{
+        padding-top: 30px;
+        color:white;
+    }
+    .ftxt span{
+        font-size:30px;
+        font-weight: bold;
+        color:violet;
+        /* padding-left:30px; */
+    }
+    .ftxt p{
+        color:white;
+    }
+    .fp{
+        width:450px;
+        display:hidden;
+        text-align:justify;
+    }
+    .subscribe{
+        padding-top: 60px;
+    }
+    .subscribe span{
+        font-size: 20px;
+        font-weight: 10px;
+        /* padding-top:20px; */
+        color:white;
+    
+    }
+    .btn1{
+        width:170px;
+        height:30px;
+        border-radius: 8px;
+        border: 0;
+        padding-left: 10px;
+        /* padding-top: 200px; */
+    }
+    .inp{
+        padding-top:10px;
+    }
+    .btn2{
+        width:170px;
+        height:30px;
+        border-radius: 8px;
+        border: 0px;
+        background-color:violet;
+        color:white;
+        font-weight: bold;
+
+    }
+    .btn2:hover{
+        /* box-shadow:25px 25px 20px   #61615f; */
+    cursor:pointer;
+    }
+   
+    </style>
+</head>
+<body>
+    <div class="header">
+   <div class="img">
+        <nav>
+            <h3>Djos</h3>
+            <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#event">Events</a></li>
+            <li><a href="#music">Music</a></li>
+            <li><a href="#videos">Video</a></li>
+            <li><a href="#about">About</a></li>
+        </ul>
+        <h1>myTunes</h1>
+        <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore incidunt amet ipsum ipsa repellendus et possimus maxime tempora! Molestias alias veritatis numquam veniam sapiente. Doloribus obcaecati velit officiis et quam.</p>
+        </nav>
+    </div>
+    <a name="event"></a>
+   <div class="event">
+     <div class="label">Upcoming Events</div>
+    <div class="box">
+        <div class="boxes"><img src="C:\Users\REKHA GIRI\Desktop\CODING\music\girl1.jpg" height="260" width="343"/>
+            <div class="date">
+                May 23 , 2019
+            </div>
+            <div class="txt">
+            <div>David Guetta Miami Ultra</div>
+            </div>
+           
+            <p align="justify" class="david">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim obcaecati eius dicta nostrum autem doloremque laudantium odio placeat rerum iste!</p></div>
+        <div class="boxes"><img src="C:\Users\REKHA GIRI\Desktop\CODING\music\girl2.jpg" height="260" width="343"/>
+            <div class="date">
+                June 15 , 2019
+            </div>
+
+            <div class="txt">
+            <div>David Guetta Miami Ultra</div>
+        </div>
+            <p align="justify" class="david">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim obcaecati eius dicta nostrum autem doloremque laudantium odio placeat rerum iste!</p></div>
+        <div class="boxes"><img src="C:\Users\REKHA GIRI\Desktop\CODING\music\girl3.jpg" height="260" width="343"/>
+            <div class="date">
+                May 30 , 2019
+            </div>
+
+            <div class="txt">
+          <div>David Guetta Miami Ultra</div>  
+        </div>
+            <p align="justify" class="david">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim obcaecati eius dicta nostrum autem doloremque laudantium odio placeat rerum iste!</p></div>
+    
+    </div>
+    </div>
+   </div>
+<a name="music"></a>
+   <div class="video">
+    <div class="content">
+        <span>Get the notifications on <br>
+            You are just a click away</span>
+        <p align="justify" >Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum odio repudiandae, dolore nemo veniam maiores nobis? Repellat rerum placeat illum! Mollitia dolor cum, sequi, distinctio quia ad officia dolore voluptas explicabo eos facilis provident quis, excepturi nesciunt labore enim beatae placeat eligendi dolores vero hic sit! Fuga rerum illum mollitia, deserunt sit quos omnis consequatur possimus unde, alias nesciunt neque
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo molestiae voluptates porro sapiente illum et maiores eveniet velit, mollitia, recusandae laborum nulla quia officia asperiores odit culpa quis commodi aliquam id! Quidem, repellendus necessitatibus vel exercitationem, inventore illo voluptatibus, error atque animi ullam ad reiciendis neque.
+        </p>
+        <button>Know More</button>
+    </div>
+    <div class="videoImg">
+        <img src="C:\Users\REKHA GIRI\Desktop\CODING\music\image6.png" height="300" width="400"  />
+    </div>
+   </div>
+   <a name="videos"></a>
+ 
+   <div class="feed">Youtube Feed</div>
+
+   <div class="utube">
+
+        <div class="photos">
+        <img src="C:\Users\REKHA GIRI\Desktop\CODING\music\concert1.jpg" height="200" width="350"/>
+        <div class="utxt">
+            <span class="uu">David geutta Miami Ultra Music <br>Festival 2018</span></div>
+        </div>
+
+        <div class="photos">
+            <img src="C:\Users\REKHA GIRI\Desktop\CODING\music\concert2.jpg" height="200" width="350"/>
+            <div class="utxt">
+                <span class="uu">David geutta Miami Ultra Music <br>Festival 2018</span></div>
+            </div>
+
+            <div class="photos">
+                <img src="C:\Users\REKHA GIRI\Desktop\CODING\music\concert3.jpg" height="200" width="350"/>
+                <div class="utxt">
+                    <span class="uu">David geutta Miami Ultra Music <br>Festival 2018</span></div>
+                </div>
+
+                <div class="photos">
+                    <img src="C:\Users\REKHA GIRI\Desktop\CODING\music\concert4.jpg" height="200" width="350"/>
+                    <div class="utxt">
+                        <span class="uu">David geutta Miami Ultra Music <br>Festival 2018</span></div>
+                    </div>
+                <div class="photos">
+                        <img src="C:\Users\REKHA GIRI\Desktop\CODING\music\concert5.jpg" height="200" width="350"/>
+                        <div class="utxt">
+                            <span class="uu">David geutta Miami Ultra Music <br>Festival 2018</span></div>
+                        </div>
+                <div class="photos">
+                            <img src="C:\Users\REKHA GIRI\Desktop\CODING\music\concert6.jpg" height="200" width="350"/>
+                            <div class="utxt">
+                                <span class="uu">David geutta Miami Ultra Music <br>Festival 2018</span></div>
+                            </div>
+
+   </div>
+   <div class="download">
+    <div class="downimg">
+        <img src="C:\Users\REKHA GIRI\Desktop\CODING\music\phone.png" height="400" width="400"/>
+    </div>
+<a name="about"></a>
+    <div class="downtxt">
+        <span>Download Our App from</span>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci debitis reiciendis unde doloribus quaerat ipsam eius voluptatem odit! Ad molestiae molestias voluptatum fugiat recusandae officia aliquid, dolore saepe iste voluptatem dolores quidem odio iure eveniet voluptatibus voluptate fugit quae? Deserunt nostrum dolorem exercitationem mollitia consectetur perspiciatis beatae temporibus neque esse?</p>
+    </div>
+   </div>
+
+
+   <div class="footer">
+    <div class="ftxt">
+        <span>Djos</span>
+        <p class="fp">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam, est iusto cumque, beatae amet voluptatem ratione perspiciatis maiores eaque impedit aliquam, velit quidem!</p>
+    </div>
+    <table>
+<tr>
+   <th>Social</th>
+</tr>
+<tr>
+   <td>Blogs</td>
+</tr>
+<tr>   
+    <td>facebook</td>
+</tr>
+<tr>
+   <td>Instagram</td>
+</tr>
+<tr>
+   <td>Twitter</td>
+</tr>
+    
+</table>
+
+<table>
+    <tr>
+   <th>Company</th>
+</tr>
+<tr>
+   <td>About</td>
+</tr>
+<tr>   
+    <td>Company</td>
+</tr>
+<tr>
+   <td>Affiliates</td>
+</tr>
+<tr>
+   <td>Partners</td>
+</tr>
+    
+</table>
+
+<div class="subscribe">
+    <span>Join our channel to get the latest updates </span>
+    <br>
+    <div class="inp"></div>
+    <input class="btn1" type="text" placeholder="email-address"/>
+    <input class="btn2" type="button" value="Register Now"/>
+</div>
+
+</div>
+</div>
+
+</body>
+</html>
